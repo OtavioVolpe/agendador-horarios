@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -21,8 +22,8 @@ public class Agendamento {
     private Long id;
     private String servico;
     private String profissional;
-    private LocalDate dataHoraAgendamento;
+    private LocalDateTime dataHoraAgendamento;
     private String cliente;
     private String telefoneCliente;
-    private LocalDate dataInsercao = LocalDate.now();
+    private LocalDateTime dataInsercao = LocalDateTime.now();
 }
